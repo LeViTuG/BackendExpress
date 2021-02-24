@@ -11,6 +11,7 @@ const Category = require("./models/categories");
 const Product = require("./models/products");
 const User = require("./models/users");
 const Customize = require("./models/customize");
+const Order = require("./models/orders");
 
 // connect db
 const connectDB = require("./config/db");
@@ -19,9 +20,9 @@ connectDB();
 
 const importData = async () => {
   try {
-    await Category.deleteMany({});
-    await Product.deleteMany({});
-    await Customize.deleteMany({});
+    // await Category.deleteMany({});
+    // await Product.deleteMany({});
+    // await Customize.deleteMany({});
 
     await User.insertMany(users)
     await Customize.insertMany(customizes)
@@ -48,8 +49,11 @@ const destroyData = async () => {
 
         // delete data if already exists
         await Category.deleteMany();
+        await Customize.deleteMany();
+        await Category.deleteMany();
         await Product.deleteMany();
         await User.deleteMany();
+        await Order.deleteMany();
 
         console.log('Data Destroyed')
         process.exit()

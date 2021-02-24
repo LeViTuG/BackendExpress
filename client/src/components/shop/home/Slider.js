@@ -19,7 +19,7 @@ const Slider = (props) => {
       <div className="relative mt-16 bg-gray-100 border-2">
         {data.sliderImages.length > 0 ? (
           <img
-            className="w-full"
+            className="w-full sliderCustom"
             src={`${apiURL}/uploads/customize/${data.sliderImages[slide].slideImage}`}
             
             alt="sliderImage"
@@ -59,7 +59,7 @@ const Slider = (props) => {
         </svg>
         <div className="absolute inset-0 flex items-center justify-center">
           <a
-            href="#shop"
+            href="/"
             style={{ background: "#303031" }}
             className="cursor-pointer box-border text-2xl text-white px-4 py-2 rounded"
           >

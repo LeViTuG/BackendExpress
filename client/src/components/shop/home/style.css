@@ -7,7 +7,11 @@
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
 }
-
+.sliderCustom{
+  max-height: 600px;
+  object-fit: cover;
+  opacity: 0.7;
+}
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;

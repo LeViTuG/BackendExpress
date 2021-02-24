@@ -69,7 +69,9 @@ const SingleProduct = (props) => {
                   alt=""
                 />
                 <div className="flex items-center justify-between mt-2">
-                  <div className="text-gray-600 font-light truncate">
+                  <div
+                  onClick={(e) => history.push(`/products/${item._id}`)}
+                  className="text-gray-600 font-light truncate">
                     {item.pName}
                   </div>
                   <div className="flex items-center space-x-1">

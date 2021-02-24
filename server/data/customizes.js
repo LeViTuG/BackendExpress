@@ -1,6 +1,10 @@
 const customizes = [{
   "firstShow": 0,
-  "slideImage": "https://robohash.org/dolorvoluptatumipsum.jpg?size=1250x450&set=set1"
+  "slideImage": "cus1.jpg"
+},
+{
+  "firstShow": 0,
+  "slideImage": "cus2.jpg"
 }];
 
 module.exports = customizes;

@@ -2,6 +2,7 @@ import React, { Fragment, useContext } from "react";
 import { ProductContext } from "./index";
 import AddProductModal from "./AddProductModal";
 import EditProductModal from "./EditProductModal";
+import SearchFilter from "./SearchFilter"
 
 const ProductMenu = (props) => {
   const { dispatch } = useContext(ProductContext);
@@ -33,6 +34,7 @@ const ProductMenu = (props) => {
           </span>
         </div>
         <AddProductModal />
+        <SearchFilter />
         <EditProductModal />
       </div>
     </Fragment>

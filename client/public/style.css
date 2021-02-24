@@ -15258,6 +15258,10 @@ video {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
+}
+.truncate:hover{
+  color: #1a202c;
 }
 
 .w-0 {
