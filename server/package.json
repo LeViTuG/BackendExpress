@@ -1,0 +1,38 @@
+{
+  "name": "Backend2020",
+  "version": "1.0.0",
+  "description": "Back end 2020 final",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "start:dev": "nodemon app.js",
+    "data:import": "node seederScript",
+    "data:destroy": "node seederScript -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LeViTuG/BackendExpress"
+  },
+  "author": "R0y | https://github.com/LeViTuG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeViTuG/BackendExpress/issues"
+  },
+  "homepage": "https://github.com/LeViTuG/BackendExpress#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "braintree": "^3.0.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "i": "^0.3.6",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.27",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.4",
+    "npm": "^6.14.8"
+  }
+}
